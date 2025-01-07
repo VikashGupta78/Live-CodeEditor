@@ -63,7 +63,7 @@ io.on(ACTIONS.CONNECTION, (socket) => {
 
 });
 
-mongoose.connect('mongodb://127.0.0.1:27017/CodeDB', {
+mongoose.connect('mongodb+srv://vikashkg12:vikashkg12@cluster8.enjp3.mongodb.net/', {
 }).then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => {
