@@ -18,7 +18,7 @@ const Demo = styled('div')(({ theme }) => ({
     maxHeight: 'calc(100vh - 250px)',
     height: 'calc(100vh - 285px)', // Set a maximum height to trigger scrolling
     backgroundColor:"#1e1f26"
-}));
+}));  
 
 
 export default function InteractiveList({ tabs }) {
