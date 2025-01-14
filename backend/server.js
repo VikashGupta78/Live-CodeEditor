@@ -76,7 +76,7 @@ io.on(ACTIONS.CONNECTION, (socket) => {
 const mongo_url = process.env.MONGO_URL; 
 console.log("mongo_url h updated; ", mongo_url);
 mongoose.connect(mongo_url, {
-}).then(() => { 
+}).then(() => {  
   console.log('Connected to MongoDB');
 }).catch(err => {
   console.error('Error connecting to MongoDB', err); 
