@@ -13,7 +13,7 @@ const userDetails = {};
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
-
+ 
 //configure cors
 // const corsOption = {
 //   origin: process.env.FRONTEND_URL,
@@ -115,7 +115,7 @@ app.post('/rooms', async (req, res) => {
     res.status(500).send('Server error');
   }
 });
-
+ 
 app.get('/getprevdata', async (req, res) => {
   const { roomId, userName } = req.body;
   const room = await roomModel.findOne(
